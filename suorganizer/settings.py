@@ -26,11 +26,12 @@ SECRET_KEY = 'django-insecure-9bp1#9oogyz1=bq#58n0cnv1(&2wjk71q^)ikq4clpfw-w9p4f
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
+ 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'blog.apps.BlogConfig',
     'organizer.apps.OrganizerConfig',
     "debug_toolbar",
     'admin_argon.apps.AdminArgonConfig',
