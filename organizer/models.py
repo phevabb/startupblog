@@ -5,7 +5,7 @@ class Tag (models.Model):
     slug = models.SlugField(max_length=31, unique=True, help_text= 'A label for URL Config')
 
     def __str__ (self):
-        return self.name
+        return self.name.capitalize()
     class Meta:
         ordering = ['name']
 
@@ -21,7 +21,7 @@ class Startup (models.Model):
     website = models.URLField()
 
     def __str__ (self):
-        return self.name
+        return self.name.title()
 
     class Meta:
         ordering = ['name']

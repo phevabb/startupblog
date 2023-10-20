@@ -31,10 +31,11 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'jazzmin',
     'blog.apps.BlogConfig',
     'organizer.apps.OrganizerConfig',
     "debug_toolbar",
-    'admin_argon.apps.AdminArgonConfig',
+   # 'admin_argon.apps.AdminArgonConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

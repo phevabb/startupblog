@@ -11,7 +11,7 @@ class Post(models.Model):
     startup = models.ManyToManyField(Startup, related_name='blog_posts')
 
     def __str__ (self):
-        return f"{self.title}, {self.pub_date('%Y-%m-%d')}"
+        return f"{self.title}, {self.pub_date}"
     
     class Meta:
         verbose_name = 'blog post'
